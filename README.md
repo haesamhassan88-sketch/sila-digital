@@ -1,8 +1,12 @@
-# Sila Digital V5 Bilingual
+# Sila Digital V6 Branding
 
-Arabic/English website with corrected WhatsApp number.
+Includes the new professional Sila Digital branding presentation.
 
-Correct local number: 01111766792
-International WhatsApp link: +20 111 176 6792
+Upload all files and the `images` folder to the root of the GitHub repository.
 
-Upload all files to the root of the GitHub repository.
+Important image:
+- images/sila-branding-board.png
+
+Correct WhatsApp:
+- Local: 01111766792
+- International: +20 111 176 6792

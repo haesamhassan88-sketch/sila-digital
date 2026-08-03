@@ -1,23 +1,8 @@
-# Sila Digital Website V4
+# Sila Digital V5 Bilingual
 
-Professional static website prepared for GitHub Pages.
+Arabic/English website with corrected WhatsApp number.
 
-## Upload
-Upload all files and the `images` folder to the root of your `sila-digital` repository, then commit the changes.
+Correct local number: 01111766792
+International WhatsApp link: +20 111 176 6792
 
-Live URL:
-https://haesamhassan88-sketch.github.io/sila-digital/
-
-## Included
-- Services
-- Starting prices
-- How the order process works
-- Portfolio-ready section
-- FAQ
-- Contact page
-- Privacy Policy
-- Refund Policy
-- Terms & Conditions
-- Mobile-friendly design
-- WhatsApp and email floating buttons
-- Favicon
+Upload all files to the root of the GitHub repository.

@@ -36,7 +36,7 @@ const translations = {
     c_name:"Business name",c_email:"Email",c_phone:"WhatsApp / Phone",c_location:"Location",
     cta_title:"Ready to request a service?",cta_text:"Contact us now and receive a clear quotation before work starts.",cta_btn:"Contact us",
     privacy:"Privacy Policy",refund:"Refund Policy",terms:"Terms & Conditions",contact_us:"Contact Us",
-    rights:"All rights reserved."
+    rights:"All rights reserved.",order_now:"Order service →"
   },
   ar: {
     nav_services:"الخدمات",nav_pricing:"الأسعار",nav_process:"طريقة العمل",nav_about:"من نحن",nav_faq:"الأسئلة",nav_contact:"تواصل معنا",
@@ -74,7 +74,7 @@ const translations = {
     c_name:"اسم النشاط",c_email:"البريد الإلكتروني",c_phone:"واتساب / الهاتف",c_location:"الموقع",
     cta_title:"جاهز لطلب خدمة؟",cta_text:"تواصل معنا الآن واحصل على عرض سعر واضح قبل بدء العمل.",cta_btn:"تواصل معنا",
     privacy:"سياسة الخصوصية",refund:"سياسة الاسترجاع",terms:"الشروط والأحكام",contact_us:"تواصل معنا",
-    rights:"جميع الحقوق محفوظة."
+    rights:"جميع الحقوق محفوظة.",order_now:"اطلب الخدمة ←"
   }
 };
 

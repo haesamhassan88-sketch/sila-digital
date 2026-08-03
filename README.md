@@ -1,12 +1,13 @@
-# Sila Digital V6 Branding
+# Sila Digital — Professional Website
 
-Includes the new professional Sila Digital branding presentation.
+نسخة الموقع الاحترافية الجاهزة للرفع على GitHub Pages.
 
-Upload all files and the `images` folder to the root of the GitHub repository.
+## الرفع
 
-Important image:
-- images/sila-branding-board.png
+1. فك ضغط الملف.
+2. ارفع كل الملفات والمجلد `assets` إلى المستودع.
+3. تأكد أن `index.html` موجود في المجلد الرئيسي.
 
-Correct WhatsApp:
-- Local: 01111766792
-- International: +20 111 176 6792
+رقم واتساب المستخدم: 01111766792
+
+تتضمن النسخة شعار Sila Digital و6 أيقونات خدمات مستقلة بصيغة SVG، وتصميمًا متجاوبًا بالعربية والإنجليزية.

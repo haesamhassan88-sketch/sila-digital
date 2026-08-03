@@ -92,3 +92,34 @@ footer{border-top:1px solid var(--line);padding:34px 0;color:#999;font-size:13px
  .hero{padding-top:48px}.cta{flex-direction:column;align-items:flex-start}
  .visual-info{grid-template-columns:1fr}
 }
+
+
+.portfolio-card{overflow:hidden}
+.portfolio-placeholder{
+  min-height:160px;border-radius:14px;margin-bottom:18px;
+  display:grid;place-items:center;font-size:28px;font-weight:900;letter-spacing:2px;
+  color:var(--gold-light);
+  background:
+    linear-gradient(135deg,rgba(215,169,40,.16),rgba(255,255,255,.02)),
+    repeating-linear-gradient(45deg,transparent,transparent 14px,rgba(255,255,255,.025) 14px,rgba(255,255,255,.025) 28px);
+  border:1px solid rgba(215,169,40,.25)
+}
+.faq-list{display:grid;gap:14px}
+.faq-list details{
+  background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 20px
+}
+.faq-list summary{cursor:pointer;font-weight:800;color:#f1f1f1}
+.faq-list p{margin:12px 0 0;color:var(--muted)}
+.floating-actions{
+  position:fixed;right:20px;bottom:20px;z-index:120;display:grid;gap:10px
+}
+.floating-actions a{
+  width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font-weight:900;
+  box-shadow:0 14px 34px rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.12)
+}
+.float-whatsapp{background:#23c763;color:#07150b}
+.float-email{background:linear-gradient(135deg,var(--gold-light),var(--gold));color:#090909}
+@media(max-width:600px){
+  .floating-actions{right:14px;bottom:14px}
+  .floating-actions a{width:44px;height:44px}
+}

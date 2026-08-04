@@ -1,117 +1,72 @@
 <!doctype html>
-<html lang="ar">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Secure checkout for Sila Digital services in Cairo, Egypt.">
-  <title>Checkout | Sila Digital</title>
-  <link rel="icon" href="assets/logo-mark.svg">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body dir="rtl" data-page="checkout">
+<html lang="ar"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Complete your Sila Digital service order online.">
+<title>إتمام الطلب | Sila Digital</title>
+<link rel="icon" href="assets/logo-mark.svg"><link rel="stylesheet" href="style.css">
+</head><body dir="rtl" data-lang="ar">
 <header>
   <div class="container nav">
-    <a class="brand" href="index.html">
-      <img class="brand-mark" src="assets/logo-mark.svg" alt="Sila Digital logo">
-      <span>SILA DIGITAL<small>DIGITAL SOLUTIONS</small></span>
-    </a>
-    <nav class="nav-links">
-      <a href="index.html#services" data-i18n="nav_services">الخدمات</a>
-      <a href="index.html#pricing" data-i18n="nav_pricing">الأسعار</a>
-      <a href="checkout.html" data-i18n="nav_checkout">الدفع</a>
-      <a href="index.html#faq" data-i18n="nav_faq">الأسئلة</a>
-      <a href="contact.html" data-i18n="nav_contact">تواصل معنا</a>
-    </nav>
-    <div class="nav-actions">
-      <button id="langToggle" class="lang-btn" data-i18n="lang_button">English</button>
-      <button class="menu-btn" aria-label="Menu">☰</button>
-    </div>
+    <a class="brand" href="index.html"><img class="brand-mark" src="assets/logo-mark.svg" alt="Sila Digital logo"><span>SILA DIGITAL<small>DIGITAL SOLUTIONS</small></span></a>
+    <nav class="nav-links"><a href="index.html#services">الخدمات</a><a href="index.html#pricing">الأسعار</a><a href="index.html#contact">تواصل معنا</a></nav>
+    <div class="nav-actions"><button id="checkoutLang" class="lang-btn">English</button><button class="menu-btn" aria-label="Menu">☰</button></div>
   </div>
 </header>
-
 <main>
-  <section class="page-hero">
-    <div class="container">
-      <span class="eyebrow" data-i18n="checkout_badge">الدفع الآمن</span>
-      <h1 data-i18n="checkout_title">اختر الخدمة وأكمل الدفع من الموقع</h1>
-      <p data-i18n="checkout_text">اختر الباقة المناسبة، اكتب بياناتك، ثم انتقل إلى بوابة الدفع الآمنة الخاصة بالخدمة.</p>
-    </div>
-  </section>
-
-  <section style="padding-top:20px">
-    <div class="container checkout-layout">
-      <div>
-        <div class="section-head checkout-section-head">
-          <span class="eyebrow" data-i18n="checkout_packages_badge">الباقات</span>
-          <h2 data-i18n="checkout_packages_title">اختر الخدمة المناسبة</h2>
-          <p data-i18n="checkout_packages_text">الباقات ذات الأسعار الواضحة يمكن شراؤها مباشرة من صفحة الدفع هذه.</p>
-        </div>
-        <div id="checkoutOptions" class="product-grid"></div>
-      </div>
-
-      <aside class="summary-card">
-        <div class="summary-top">
-          <span class="chip" data-i18n="summary_badge">ملخص الطلب</span>
-          <h2 data-i18n="summary_title">مراجعة سريعة قبل الدفع</h2>
-        </div>
-
-        <div class="summary-line">
-          <small data-i18n="summary_service">الخدمة</small>
-          <strong id="summaryName">Windows Services</strong>
-        </div>
-        <div class="summary-line">
-          <small data-i18n="summary_price">السعر</small>
-          <strong id="summaryPrice">EGP 1,500</strong>
-        </div>
-        <div class="summary-line">
-          <small data-i18n="summary_delivery">التنفيذ</small>
-          <strong data-i18n="summary_delivery_value">تنفيذ رقمي عن بعد</strong>
-        </div>
-
-        <form id="checkoutForm" class="checkout-form">
-          <input id="checkoutName" required data-placeholder="name_label" placeholder="الاسم">
-          <input id="checkoutEmail" type="email" required data-placeholder="email_label" placeholder="البريد الإلكتروني">
-          <input id="checkoutPhone" required data-placeholder="phone_label" placeholder="رقم الهاتف">
-          <textarea id="checkoutNotes" data-placeholder="notes_label" placeholder="أي ملاحظات إضافية عن الطلب"></textarea>
-          <button id="checkoutSubmit" class="btn btn-primary" type="submit" data-i18n="checkout_submit">الانتقال إلى الدفع الآمن</button>
-        </form>
-
-        <p id="checkoutStatus" class="inline-note" aria-live="polite" hidden></p>
-
-        <div class="payment-note">
-          <strong data-i18n="payment_note_title">معلومة مهمة</strong>
-          <p data-i18n="payment_note_text">الدفع يتم عبر رابط الدفع الآمن الخاص بكل خدمة. الموقع لا يحفظ بيانات البطاقة البنكية.</p>
-        </div>
-
-        <div class="support-note">
-          <p data-i18n="custom_help_text">إذا كانت خدمتك غير موجودة ضمن الباقات الجاهزة، استخدم صفحة التواصل لطلب عرض مخصص.</p>
-          <a class="btn btn-secondary" href="contact.html" data-i18n="custom_help_btn">طلب خدمة مخصصة</a>
-        </div>
-
-        <div class="legal-links">
-          <a href="privacy.html" data-i18n="privacy">سياسة الخصوصية</a>
-          <a href="refund.html" data-i18n="refund">سياسة الاسترجاع</a>
-          <a href="terms.html" data-i18n="terms">الشروط والأحكام</a>
-        </div>
-      </aside>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="container footer">
-    <div>© <span data-year></span> Sila Digital. <span data-i18n="rights">جميع الحقوق محفوظة.</span></div>
-    <div class="footer-links">
-      <a href="checkout.html" data-i18n="checkout_page">صفحة الدفع</a>
-      <a href="privacy.html" data-i18n="privacy">سياسة الخصوصية</a>
-      <a href="refund.html" data-i18n="refund">سياسة الاسترجاع</a>
-      <a href="terms.html" data-i18n="terms">الشروط والأحكام</a>
-      <a href="contact.html" data-i18n="contact_us">تواصل معنا</a>
-    </div>
+<section class="page-hero checkout-hero"><div class="container">
+<span class="eyebrow" data-checkout-i18n="badge">طلب خدمة</span>
+<h1 data-checkout-i18n="title">أكمل طلبك في خطوات بسيطة</h1>
+<p class="lead" data-checkout-i18n="intro">أرسل بيانات الطلب من الموقع، وسيتم تأكيد السعر وموعد التسليم معك قبل بدء العمل.</p>
+</div></section>
+<section class="checkout-section"><div class="container checkout-layout">
+<div class="checkout-main">
+<div class="checkout-steps" aria-label="خطوات الطلب">
+  <span class="active" data-step-dot="1">1 <b data-checkout-i18n="step_details">البيانات</b></span>
+  <span data-step-dot="2">2 <b data-checkout-i18n="step_review">المراجعة</b></span>
+  <span data-step-dot="3">3 <b data-checkout-i18n="step_confirm">التأكيد</b></span>
+</div>
+<form id="checkoutForm" class="checkout-card">
+<section class="checkout-pane active" data-step="1">
+  <h2 data-checkout-i18n="details_title">بيانات العميل والطلب</h2>
+  <div class="form-grid">
+    <label><span data-checkout-i18n="name">الاسم بالكامل</span><input id="customerName" required autocomplete="name"></label>
+    <label><span data-checkout-i18n="phone">رقم الهاتف / واتساب</span><input id="customerPhone" required inputmode="tel" autocomplete="tel"></label>
+    <label class="full"><span data-checkout-i18n="email">البريد الإلكتروني (اختياري)</span><input id="customerEmail" type="email" autocomplete="email"></label>
+    <label class="full"><span data-checkout-i18n="service">الخدمة المطلوبة</span>
+      <select id="orderService" required>
+        <option value="" data-checkout-i18n="choose_service">اختر الخدمة</option>
+        <option value="windows">خدمات ويندوز</option><option value="discord">تجهيز سيرفر ديسكورد</option><option value="logo">تصميم الشعارات</option><option value="graphic">التصميم الجرافيكي</option><option value="support">الدعم الفني</option><option value="brand">الهوية البصرية</option>
+      </select>
+    </label>
+    <label class="full"><span data-checkout-i18n="details">تفاصيل الطلب</span><textarea id="orderDetails" required placeholder="اكتب ما تحتاجه بالتفصيل"></textarea></label>
   </div>
-</footer>
-
-<a class="floating-wa" href="checkout.html" aria-label="Checkout" data-i18n="floating_checkout">Pay</a>
-<script src="script.js"></script>
-</body>
-</html>
+  <div class="checkout-actions"><button type="button" class="btn btn-primary" data-next="2" data-checkout-i18n="continue">متابعة</button></div>
+</section>
+<section class="checkout-pane" data-step="2">
+  <h2 data-checkout-i18n="payment_title">طريقة الدفع والمراجعة</h2>
+  <div class="payment-option selected">
+    <input type="radio" id="payLater" name="payment" value="pay-later" checked>
+    <label for="payLater"><strong data-checkout-i18n="pay_later">الدفع عند استلام الخدمة</strong><small data-checkout-i18n="pay_later_desc">لن يتم خصم أي مبلغ الآن. يتم تأكيد السعر أولًا ثم الدفع بعد الاتفاق وقبل أو عند تسليم الخدمة حسب نوع الطلب.</small></label>
+  </div>
+  <div class="notice checkout-notice" data-checkout-i18n="digital_note">هذه خدمة رقمية وليست شحنة. طريقة «الدفع عند الاستلام» هنا تعني الدفع بعد تأكيد التفاصيل والسعر، وليس توصيل منتج للمنزل.</div>
+  <div id="reviewBox" class="order-review"></div>
+  <label class="terms-check"><input id="agreeTerms" type="checkbox" required><span data-checkout-i18n="agree">أوافق على الشروط وسياسة الاسترجاع، وأفهم أن إرسال الطلب لا يعني بدء التنفيذ قبل تأكيد السعر.</span></label>
+  <div class="checkout-actions"><button type="button" class="btn btn-secondary" data-back="1" data-checkout-i18n="back">رجوع</button><button type="button" class="btn btn-primary" data-next="3" data-checkout-i18n="confirm_review">تأكيد الطلب</button></div>
+</section>
+<section class="checkout-pane" data-step="3">
+  <div class="success-icon">✓</div><h2 data-checkout-i18n="ready_title">طلبك جاهز للإرسال</h2>
+  <p data-checkout-i18n="ready_text">اضغط الزر لإرسال الطلب عبر واتساب. سيظهر لك رقم طلب مرجعي للاحتفاظ به.</p>
+  <div id="finalSummary" class="order-review"></div>
+  <div class="checkout-actions"><button type="button" class="btn btn-secondary" data-back="2" data-checkout-i18n="back">رجوع</button><button id="sendOrder" type="submit" class="btn btn-primary" data-checkout-i18n="send_order">إرسال الطلب عبر واتساب</button></div>
+</section>
+</form>
+</div>
+<aside class="checkout-side">
+  <div class="checkout-card sticky-summary"><h3 data-checkout-i18n="summary_title">ملخص الطلب</h3><div id="sideSummary"><p class="muted" data-checkout-i18n="summary_empty">اختر الخدمة وأدخل بياناتك لعرض الملخص.</p></div></div>
+  <div class="checkout-card secure-box"><b data-checkout-i18n="safe_title">طلب آمن وواضح</b><p data-checkout-i18n="safe_text">لا يتم تحصيل أي مبلغ من خلال هذه الصفحة. سيتم التواصل معك لتأكيد السعر وطريقة الدفع.</p></div>
+</aside>
+</div></section>
+</main>
+<footer><div class="container footer"><div>© <span data-year></span> Sila Digital. جميع الحقوق محفوظة.</div><div class="footer-links"><a href="privacy.html">سياسة الخصوصية</a><a href="refund.html">سياسة الاسترجاع</a><a href="terms.html">الشروط والأحكام</a></div></div></footer>
+<script src="script.js"></script><script src="checkout.js"></script>
+</body></html>

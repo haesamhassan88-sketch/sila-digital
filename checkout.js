@@ -2,9 +2,9 @@ const PRODUCTS = {
   windows:{name:"باقة خدمات ويندوز",price:1500,image:"assets/service-windows.svg",description:"تثبيت وتحسين ويندوز والتعريفات والبرامج الأساسية لجهاز واحد."},
   discord:{name:"باقة سيرفر ديسكورد",price:1750,image:"assets/service-discord.svg",description:"إعداد القنوات والرتب والصلاحيات والبوتات والحماية الأساسية."},
   logo:{name:"باقة تصميم شعار",price:2150,image:"assets/service-logo.svg",description:"تصميم شعار احترافي مع تعديلين وتسليم ملفات PNG وJPG."},
-  graphic:{name:"باقة تصميم جرافيكي",price:1250,image:"assets/service-graphic.svg",description:"تصميم 5 منشورات سوشيال ميديا بمقاسات مناسبة للنشر."},
-  support:{name:"جلسة دعم فني",price:850,image:"assets/service-support.svg",description:"جلسة دعم فني عن بُعد لمدة تصل إلى 60 دقيقة."},
-  brand:{name:"باقة هوية بصرية",price:2750,image:"assets/service-brand.svg",description:"ألوان وخطوط وإرشادات استخدام الشعار واتجاه بصري موحد."}
+  graphic:{name:"باقة التصميم الجرافيكي",price:1850,image:"assets/service-graphic.svg",description:"تصميم منشورات السوشيال ميديا والبنرات والإعلانات والمطبوعات بجودة عالية."},
+  support:{name:"باقة الدعم الفني",price:1250,image:"assets/service-support.svg",description:"حل مشكلات البرامج وويندوز وتحسين الأداء وتثبيت البرامج المطلوبة عن بُعد."},
+  brand:{name:"باقة الهوية البصرية",price:3500,image:"assets/service-brand.svg",description:"شعار وألوان وخطوط وبطاقة أعمال وصور منصات ودليل استخدام للهوية."}
 };
 const params=new URLSearchParams(location.search);
 const key=PRODUCTS[params.get("product")]?params.get("product"):"windows";
@@ -33,7 +33,7 @@ form.addEventListener("submit",e=>{
   if(!/^\S+@\S+\.\S+$/.test(email)){return showError("من فضلك اكتب بريدًا إلكترونيًا صحيحًا.");}
   if(!agreed){return showError("يجب الموافقة على الشروط وسياسة الاسترجاع قبل الدفع.");}
   const link=(window.SILA_PAYMENT_LINKS||{})[key];
-  if(!link){return showError("رابط الدفع لهذه الخدمة لم تتم إضافته بعد. أضف رابط Paymob داخل ملف payment-config.js ثم ارفع الملف من جديد.");}
+  if(!link){return showError("رابط الدفع لهذه الخدمة غير متاح حاليًا. يرجى المحاولة مرة أخرى أو التواصل عبر البريد الإلكتروني.");}
   sessionStorage.setItem("silaOrder",JSON.stringify({product:key,name,phone,email,notes:document.querySelector("#customerNotes").value.trim(),amount:product.price,createdAt:new Date().toISOString()}));
   location.href=link;
 });
